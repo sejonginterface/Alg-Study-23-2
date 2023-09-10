@@ -1,0 +1,47 @@
+{
+    "init_cpp": {
+        "prefix": "init_cpp",
+        "body": [
+            "#include <algorithm>",
+            "#include <deque>",
+            "#include <iostream>",
+            "#include <queue>",
+            "#include <string>",
+            "#include <utility>",
+            "#include <vector>",
+            "using namespace std;",
+            "",
+            "$1",
+            "",
+            "int main() {",
+            "    ios_base::sync_with_stdio(false);",
+            "    cin.tie(NULL);",
+            "    cout.tie(NULL);",
+            "",
+            "    $2",
+            "",
+            "    return 0;",
+            "}"
+        ],
+        "description": "init_cpp"
+    },
+
+    "init_py": {
+        "prefix": "init_py",
+        "body": [
+            "import sys",
+            "import heapq",
+            "from bisect import bisect_left, bisect_right",
+            "from collections import deque, Counter",
+            "from itertools import permutations, product, combinations, combinations_with_replacement",
+            "import math",
+            "",
+            "def main():",
+            "   '$1'",
+            "",
+            "if __name__ == '__main__':",
+            "   main()"
+        ],
+        "description": "init_py"
+    }
+}
