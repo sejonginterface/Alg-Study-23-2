@@ -12,7 +12,7 @@ void set() {
   missing = rand() % 10000;
   for (int i = 0; i < 10000; i++) {
     if (i == missing) continue;
-    arr[i] = i;
+    arr[i] = i + 1;
   }
   for (int i = 0; i < 5000; i++) {
     int front = rand() % 10000;
@@ -20,7 +20,7 @@ void set() {
     int temp;
     temp = arr[front];
     arr[front] = arr[back];
-    arr[back] = arr[front];
+    arr[back] = temp;
   }
 }
 
@@ -52,7 +52,8 @@ int main() {
   end = clock();
   duration = (double)(end - start) / CLOCKS_PER_SEC;
   cout << duration << " sec" << '\n';
-  cout << (missing == answer ? "correct" : "wrong") << '\n';
+  cout << missing << ' ' << answer << ' '
+       << (missing == answer ? "correct" : "wrong") << '\n';
 
   set();
   start = clock();

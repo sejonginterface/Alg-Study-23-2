@@ -3,7 +3,7 @@ import random
 
 missing = None
 answer = None
-arr = [None] * 10000
+arr = [0] * 10000
 
 
 # 배열에 랜덤하게 숫자를 할당시킨다. 중복된 숫자는 존재하지 않는다.
@@ -12,7 +12,7 @@ def set_arr():
     missing = random.randint(0, 9999)
     for i in range(10000):
         if i != missing:
-            arr[i] = i
+            arr[i] = i + 1
 
     for _ in range(5000):
         front, back = random.randint(0, 9999), random.randint(0, 9999)
