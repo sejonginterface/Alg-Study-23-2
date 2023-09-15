@@ -13,6 +13,8 @@ def set_arr():
     for i in range(10000):
         if i != missing:
             arr[i] = i + 1
+        else :
+            arr[i] = 0
 
     for _ in range(5000):
         front, back = random.randint(0, 9999), random.randint(0, 9999)
@@ -21,11 +23,22 @@ def set_arr():
 
 # 2차 시간에 빠진 숫자를 찾는다
 def find_missing_number_double():
+    for i in range(1,10001):
+        flag=0
+        for j in range(0,10000):
+            if i==arr[j]:
+                flag=1
+                break
+        if flag==0:
+            return i
     pass
 
 
 # 선형 시간에 빠진 숫자를 찾는다
 def find_missing_number_linear():
+    for i in range(1,10001):
+        if i not in arr:
+            return i
     pass
 
 
