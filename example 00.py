@@ -36,9 +36,10 @@ def find_missing_number_double():
 
 # 선형 시간에 빠진 숫자를 찾는다
 def find_missing_number_linear():
-    for i in range(1,10001):
-        if i not in arr:
-            return i
+    s=50005000
+    for i in range(10000):
+        s-=arr[i]
+    return s
     pass
 
 
