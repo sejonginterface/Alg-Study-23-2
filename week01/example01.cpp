@@ -19,21 +19,21 @@ void solve(int r, int c, int len)
     {
       if (board[i][j] != board[r][c])
       {
-        cout << "( ";
+        cout << "(";
         solve(r, c, len / 2);
         solve(r, c + len / 2, len / 2);
         solve(r + len / 2, c, len / 2);
         solve(r + len / 2, c + len / 2, len / 2);
-        cout << ") ";
+        cout << ")";
         return;
       }
     }
   }
 
-  if (board[r][c] == 0)
+  if (board[r][c] == '0')
     cout << "0";
 
-  if (board[r][c] == 1)
+  if (board[r][c] == '1')
     cout << "1";
 }
 
