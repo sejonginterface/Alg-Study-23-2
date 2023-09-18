@@ -23,10 +23,12 @@ void check(int r,int c,int len){
         /* 더 작은 종이 탐색 */
         /* 시작위치를 4등분한 좌측상단 좌표 */
         /* 길이는 4등분 시켰을 때 한 변의 길이 */
+        cout << '(';
         check(r, c, len / 2);
         check(r, c + len / 2, len / 2);
         check(r + len / 2, c, len / 2);
         check(r + len / 2, c + len / 2, len / 2);
+        cout << ')';
         return;
       }
     }
