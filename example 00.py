@@ -21,20 +21,19 @@ def set_arr():
         arr[front], arr[back] = arr[back], arr[front]
 
 
-# 2차 시간에 빠진 숫자를 찾는다
+# 2차 시간에 빠진 숫자를 찾는다 ->2중
 def find_missing_number_double():
-    for i in (0,10000):
+    for i in (1,10000):
         if arr[i]==0:
             print(i)
+    
 
     pass
 
 
-# 선형 시간에 빠진 숫자를 찾는다
+# 선형 시간에 빠진 숫자를 찾는다 ->1차
 def find_missing_number_linear():
-    for i in (0,10000):
-        if arr[i]==0:
-            print(i)
+
     pass
 
 
