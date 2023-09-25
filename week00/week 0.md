@@ -3,10 +3,15 @@
 ## 확장프로그램
 
 1. c/c++ extension pack
+
 2. c/c++ compile run
+
 3. error lens
+
 4. git graph
+
 5. live share
+
 6. 기타 theme
 
 ## snippet 설정
@@ -16,7 +21,7 @@ snippet example.json 파일에 있는 기본 설정 참고
 
 ## format 설정
 
-File -> Preferences -> Settings -> format 검색 -> auto save on 설정
+File -> Preferences -> Settings -> format 검색 -> Format on save 설정
 
 # Big-O 표기법
 
@@ -45,7 +50,7 @@ for (int i = 0; i < N; i++){
 ## 여러 구조의 복잡도 계산
 
 간단하게는 반복문이지만, 정확하게 말하여서 BigO를 통하여 표현하고자 하는 것은 특정 변수에 대한 알고리즘의 연산 횟수이다.  
-즉 `for (int i = 1; i * i < N; i++)` 과 같은 반복문이라면 해당 코드는 $O(\sqrt N)$ 이 된다.  
+즉 `for (int i = 1; i * i < 2N; i++)` 과 같은 반복문이라면 해당 코드는 $O(\sqrt N)$ 이 된다.  
 코드의 구조를 보고 적절하게 계산해봐야 한다.
 
 ## BigO에 따른 예상 소요시간
