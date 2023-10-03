@@ -5,9 +5,6 @@ from collections import deque, Counter
 from itertools import permutations, product, combinations, combinations_with_replacement
 import math
 
-""" 이 함수의 기능
-길이를 받아서 그 길이만큼 종이가 한 색상으로 이루어졌는지 확인하는 함수
-"""
 
 B = 0
 W = 0
@@ -16,6 +13,7 @@ board = [list(map(int, sys.stdin.readline().split())) for i in range(n)]
 print(board)
 
 
+# 이 함수의 기능 길이를 받아서 그 길이만큼 종이가 한 색상으로 이루어졌는지 확인하는 함수
 def check_color(r, c, size, board):
     global B, W
     for i in range(r, r + size):
