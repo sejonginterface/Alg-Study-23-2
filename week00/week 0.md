@@ -21,7 +21,7 @@ snippet example.json 파일에 있는 기본 설정 참고
 
 ## format 설정
 
-File -> Preferences -> Settings -> format 검색 -> auto save on 설정
+File -> Preferences -> Settings -> format 검색 -> Format on save 설정
 
 # Big-O 표기법
 
@@ -61,6 +61,6 @@ for (int i = 0; i < N; i++){
 | :--:| :--:|:--:|
 | $O(N)$ | $100,000,000$ |$10^8$
 | $O(N^2)$ | $10,000$ |$10^4$
-| $O(N logN)$ | $10,000,000$ |$10^7$	
+| $O(N logN)$ | $10,000,000$ |$10^7$
 
 이런식으로 간단하게 미리 예측해볼 수 있다. 실제 연산횟수와 차이가 난다. 미리 예측해보는 것에 의미가 있다.
